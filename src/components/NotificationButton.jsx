@@ -16,7 +16,7 @@ const EnableNotifications = () => {
     if (token) {
         console.log("Sending to backend:", { email, token });
       // Send email + FCM token to backend
-      const response = await fetch(`${import.meta.envVITE_BACKEND_URL}/api/customers/save-token`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/customers/save-token`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, token }),
@@ -34,6 +34,7 @@ const EnableNotifications = () => {
   return (
     <div style={{ maxWidth: 400, margin: "50px auto", textAlign: "center" }}>
       <h2>Enable Push Notifications</h2>
+      <h5 style={{ padding: "0px 0px 10px 5px" }}>Enter email if visiting first time</h5>
       <input
         type="email"
         placeholder="Enter your email"
