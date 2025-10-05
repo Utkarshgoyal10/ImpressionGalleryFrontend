@@ -1,0 +1,65 @@
+/* Loginn.css */
+
+.login-container {
+  background-color: #1f2937; /* gray-800 */
+  padding: 32px;
+  border-radius: 16px;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  color: #fff;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #374151; /* gray-700 */
+  color: #fff;
+}
+
+.login-container input::placeholder {
+  color: #9ca3af; /* gray-400 */
+}
+
+.login-container input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6; /* blue-500 ring */
+}
+
+.login-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb; /* blue-600 */
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-container button:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.login-error {
+  color: #f87171; /* red-400 */
+  text-align: center;
+  margin-bottom: 8px;
+}

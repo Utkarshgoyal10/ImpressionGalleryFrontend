@@ -1,0 +1,105 @@
+.customer-form-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #111827; /* dark gray */
+  padding: 0px 8px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  margin: 0 auto 32px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.customer-form-container h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #f9fafb;
+}
+
+.customer-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.customer-form-container label {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  color: #9ca3af; /* gray-400 */
+}
+
+.customer-form-container input[type="text"],
+.customer-form-container input[type="email"],
+.customer-form-container input[type="date"],
+.customer-form-container input[type="number"],
+.customer-form-container input[type="file"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1f2937; /* gray-800 */
+  color: #fff;
+  font-size: 1.3rem;  width: 100%;
+  box-sizing: border-box;
+}
+
+.customer-form-container input::placeholder {
+  color: #6b7280; /* gray-500 */
+}
+
+.customer-form-container input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6; /* blue ring on focus */
+}
+
+.customer-form-container button {
+  padding: 12px;
+  background-color: #10b981; /* green-500 */
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 8px;
+}
+
+.customer-form-container button:hover {
+  background-color: #059669; /* green-600 */
+  transform: translateY(-2px);
+}
+
+.customer-form-message {
+  margin-top: 12px;
+  text-align: center;
+  color: #facc15; /* yellow-400 for success/error */
+  font-weight: 500;
+}
+
+/* Flex row for DOB + Anniversary */
+.form-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap; /* Responsive: stack on small screens */
+}
+
+.form-col {
+  flex: 1;
+  min-width: 140px; /* Ensures it doesn’t shrink too small */
+  display: flex;
+  flex-direction: column;
+}
+.customer-form-container label {
+  font-size: 1.1rem; /* increased font size */
+  font-weight: 700;  /* bold */
+  margin-bottom: 4px;
+  color: #f3f4f6; /* lighter gray */
+  display: flex;
+  flex-direction: column; /* keeps input inside the label */
+  padding-bottom: 10px;
+}

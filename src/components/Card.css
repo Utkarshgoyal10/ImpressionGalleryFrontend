@@ -1,0 +1,59 @@
+/* Card.css */
+
+.card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 24px;
+  height: 128px; /* h-32 */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card.active {
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.2);
+}
+
+.card .icon {
+  margin-top: 16px;
+  color: #d1d5db; /* default gray-300 */
+  justify-content: center;
+}
+
+.card.active .icon {
+  color: #fff;
+}
+
+.card .title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Background colors for different cards */
+.card.blue {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.card.yellow {
+  background-color: #f59e0b; /* yellow-500 */
+}
+
+.card.green {
+  background-color: #22c55e; /* green-500 */
+}
+
+.card.default {
+  background-color: #3b434d; /* gray-800 */
+}
+
+.card.default:hover {
+  background-color: #374151; /* gray-700 */
+}
